@@ -19,7 +19,7 @@ public class Principal extends AppCompatActivity {
 
         getWindow().setLayout((int)(width*.9),(int)(heigth*.8));
 
-        //probando esta wea
+        //probando esta wea 2
 
     }
 }
