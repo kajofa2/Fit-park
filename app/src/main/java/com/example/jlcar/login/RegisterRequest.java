@@ -2,7 +2,6 @@ package com.example.jlcar.login;
 
 import com.android.volley.Response;
 import com.android.volley.toolbox.StringRequest;
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -17,7 +16,8 @@ public class RegisterRequest extends StringRequest{
     }
 
     @Override
-    public Map<String,String> getParams(){
+    public Map<String,String> getParams()
+    {
         return params;
     }
 }

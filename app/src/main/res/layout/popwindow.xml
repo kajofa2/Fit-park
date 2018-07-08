@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/darker_gray">
+
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtApellido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNombre"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Apellido"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/lblPeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtPeso"
+        android:layout_alignStart="@+id/txtNombre"
+        android:text="Peso" />
+
+    <EditText
+        android:id="@+id/txtPeso"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtEstatura"
+        android:layout_below="@+id/txtEstatura"
+        android:ems="10"
+        android:hint="50kg"
+        android:inputType="number" />
+
+
+    <TextView
+        android:id="@+id/lblEstatura"
+        android:layout_width="62dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtEstatura"
+        android:layout_alignStart="@+id/txtNombre"
+        android:text="Estatura" />
+
+    <EditText
+        android:id="@+id/txtEstatura"
+        android:layout_width="107dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtNombre"
+        android:layout_below="@+id/txtApellido"
+        android:ems="10"
+        android:hint="150cms"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/lblSexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/txtNombre"
+        android:layout_marginTop="204dp"
+        android:text="Sexo" />
+
+    <RadioGroup
+        android:id="@+id/rgSexo"
+        android:layout_width="121dp"
+        android:layout_height="95dp"
+        android:layout_alignEnd="@+id/txtNombre"
+        android:layout_below="@+id/txtPeso">
+
+        <RadioButton
+            android:id="@+id/rbMujer"
+            android:layout_width="86dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txtPeso"
+            android:layout_below="@+id/rbHombre"
+            android:layout_weight="1"
+            android:text="Mujer" />
+
+        <RadioButton
+            android:id="@+id/rbHombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txtPeso"
+            android:layout_below="@+id/txtEstatura"
+            android:layout_weight="1"
+            android:text="Hombre" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="116dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtFecha"
+        android:layout_toEndOf="@+id/lblPeso"
+        android:text="Guardar" />
+
+    <TextView
+        android:id="@+id/lblFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtNombre"
+        android:layout_below="@+id/rgSexo"
+        android:text="Fecha de Nacimiento" />
+
+    <EditText
+        android:id="@+id/txtFecha"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtNombre"
+        android:layout_below="@+id/lblFecha"
+        android:ems="10"
+        android:inputType="date" />
+
+
+</RelativeLayout>
